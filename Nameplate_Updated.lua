@@ -26,25 +26,25 @@ function (self, unitId, unitFrame, envTable, modTable)
     
     
     
-    if (Plater.NameplateHasAura (unitFrame, 164812)) then
+    if (Plater.UnitHasAura(unitFrame, "Moonfire_player")) then
         hasmf = true
     else
         hasmf = false
     end
     
-    if (Plater.NameplateHasAura (unitFrame, 164815)) then
+    if (Plater.UnitHasAura(unitFrame, "Sunfire_player")) then
         hassf = true
     else
         hassf = false
     end
     
-    if (Plater.NameplateHasAura (unitFrame, 202347)) then
+    if (Plater.UnitHasAura(unitFrame, "Stellar Flare_player")) then
         hasfl = true
     else
         hasfl = false
     end
     
-    if (Plater.NameplateHasAura (unitFrame, 81281)) then
+    if (Plater.UnitHasAura(unitFrame, "Fungal Growth_player")) then
         hasShroom = true
     else
         hasShroom = false
@@ -72,3 +72,4 @@ function (self, unitId, unitFrame, envTable, modTable)
         return;
     end
 end
+
